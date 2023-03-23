@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    background-color: #aaa;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.wrapper{
+    background-color: #fff;
+    width: 80%;
+    max-width: 600px;
+    padding: 15px;
+}
+.wrapper h1{
+    text-align: center;
+    padding: 12px;
+}
+.wrapper .todo-header{
+    display: flex;
+    justify-content: space-between;
+}
+.todo-header input{
+    padding: 5px 12px;
+    width: 80%;
+    outline: none;
+}
+button{
+    padding: 8px 12px;
+    background-color: #7cfd03;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+button:active{
+    transform: scale(.9);
+}
+.wrapper .todo-body{
+    margin-top: 15px;
+}
+.wrapper .todo-body li{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: auto auto 8% 8%;
+    grid-column-gap: 5px;
+    margin-top: 5px;
+    border-bottom: 1px dotted #aaa;
+}
+.todo-body li .close, li .edit{
+    background-color: #7cfd03;
+    border-radius: 5px;
+    text-align: center;
+}
+.todo-body li .close{
+    background-color: red;
+}
+.modal-edit{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #0c0c0c88;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-edit_content{
+    background-color: #fff;
+    padding: 15px;
+}
+.modal-edit_content input{
+    display: block;
+    width: 400px;
+    padding: 5px 12px;
+    margin: 15px 0;
+    outline: none;
+}
+.modal-edit_content button, .delete button{
+    float: right;
+    margin-right: 5px;
+}
+.delete{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 15px;
+}
+.delete h3{
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+.hidden{
+    display: none;
+}
