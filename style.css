@@ -43,6 +43,11 @@ button{
 button:active{
     transform: scale(.9);
 }
+button:hover,
+.todo-body li .edit:hover, .todo-body li .close:hover{
+    background-color: #aaa;
+    color: #7cfd03;
+}
 .wrapper .todo-body{
     margin-top: 15px;
 }
