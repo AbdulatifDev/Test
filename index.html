@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Todo List</h1>
+        <div class="todo-header">
+            <input type="text" placeholder="add text" id="add-todo">
+            <button class="add">add</button>
+        </div>
+        <div class="todo-body">
+            <ul>
+                <li>
+                    list 1 
+                    <span class="date">15:34:15 28.02.2023</span>
+                    <span class="edit">&#9998;</span> 
+                    <span class="close" >&#10006;</span>
+                </li>
+                <li>
+                    list 2
+                    <span class="date">15:34:15 28.02.2023</span>
+                    <span class="edit">&#9998;</span> 
+                    <span class="close" >&#10006;</span>
+                </li>
+                <li>
+                    list 3
+                    <span class="date">15:34:15 28.02.2023</span>
+                    <span class="edit">&#9998;</span> 
+                    <span class="close" >&#10006;</span>
+                </li>
+                <li>
+                    list 4
+                    <span class="date">15:34:15 28.02.2023</span>
+                    <span class="edit">&#9998;</span> 
+                    <span class="close" >&#10006;</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="modal-edit hidden">
+        <div class="modal-edit_content">
+            <h3>Edit list</h3>
+            <input type="text" name="" id="edit-todo">
+            <button class="save">save</button>
+            <button class="cancel">cancel</button>
+        </div>
+    </div>
+    <div class="delete hidden">
+        <h3>Are you sure you want to delete it?</h3>
+        <button class="yes">yes</button>
+        <button class="no">no</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
